@@ -16,5 +16,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+#firstTextSection {
+  text-align: left;
+  max-width: 760px;
+  margin: 0 auto;
+}
 </style>

@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+#heroImage {
+  width: 100%;
+  max-width: 760px;
+}
 </style>
