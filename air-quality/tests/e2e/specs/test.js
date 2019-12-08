@@ -32,4 +32,8 @@ describe('App starts and elements are present', () => {
   it("A div with an id of secondTextSection exists", () => {
     cy.get('div[id="secondTextSection"]')
   });
+
+  it("5 <p> tags are present within a div with an id of secondTextSection", () => {
+    cy.get('div[id="secondTextSection"]').children('p').should('have.length', 5)
+  });
 })
