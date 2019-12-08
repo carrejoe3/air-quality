@@ -13,8 +13,8 @@ describe('App starts and elements are present', () => {
     cy.get('div[id="heroImageContainer"]').find("h1")
   });
 
-  it("5 <p> tags are present within a div with an id of mainContent", () => {
-    cy.get('div[id="mainContent"]').children('p').should('have.length', 5)
+  it("5 <p> tags are present within a div with an id of firstTextSection", () => {
+    cy.get('div[id="firstTextSection"]').children('p').should('have.length', 5)
   });
 
   it("A div with an id of CityDropdown exists", () => {
@@ -27,5 +27,9 @@ describe('App starts and elements are present', () => {
 
   it("2 <p> tags exists within a div with an id of CityDropdown", () => {
     cy.get('div[id="CityDropdown').children('p').should('have.length', 2)
+  });
+
+  it("A div with an id of secondTextSection exists", () => {
+    cy.get('div[id="secondTextSection"]')
   });
 })

@@ -1,22 +1,25 @@
 <template>
   <div id="app">
     <HeroImage/>
-    <MainContent/>
+    <FirstTextSection/>
     <CitySelect/>
+    <SecondTextSection/>
   </div>
 </template>
 
 <script>
 import HeroImage from './components/HeroImage.vue'
-import MainContent from './components/MainContent.vue'
+import FirstTextSection from './components/FirstTextSection.vue'
 import CitySelect from './components/CitySelect.vue'
+import SecondTextSection from './components/SecondTextSection.vue'
 
 export default {
   name: 'app',
   components: {
     HeroImage,
-    MainContent,
-    CitySelect
+    FirstTextSection,
+    CitySelect,
+    SecondTextSection
   }
 }
 </script>
