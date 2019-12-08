@@ -13,6 +13,10 @@ describe('App starts and elements are present', () => {
     cy.get('div[id="heroImageContainer"]').find("h1")
   });
 
+  it("Two buttons are present within a div with class btnContainer", () => {
+    cy.get('div[class="btnContainer"]').children("button").should('have.length', 2)
+  });
+
   it("A div with an id of articleInfo exists", () => {
     cy.get('div[id="articleInfo')
   });
