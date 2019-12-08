@@ -30,6 +30,19 @@ export default new Vuex.Store({
         p5: state.allData.p_5_value
       }
       return mainContentData
+    },
+    cityData (state) {
+      let cityData = []
+      for (let i = 1; i < parseInt(state.allData.total_cities_1_value) + 1; i++) {
+        let city = {
+          cityId: i,
+          cityName: state.allData['compare-tabs_1_city_' + i + '_name'],
+          cityAqi: state.allData['compare-tabs_1_city_' + i + '_aqi'],
+          cityCigg: state.allData['compare-tabs_1_city_' + i + '_cigg']
+        }
+        cityData.push(city)
+      }
+      return cityData
     }
   }
 })
