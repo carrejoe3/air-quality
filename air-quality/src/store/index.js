@@ -20,6 +20,16 @@ export default new Vuex.Store({
         title: state.allData.hero_1_title
       }
       return heroImageData
+    },
+    mainContentData (state) {
+      let mainContentData = {
+        p1: state.allData.p_1_value,
+        p2: state.allData.p_2_value,
+        p3: state.allData.p_3_value,
+        p4: state.allData.p_4_value,
+        p5: state.allData.p_5_value
+      }
+      return mainContentData
     }
   }
 })
