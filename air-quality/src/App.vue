@@ -2,18 +2,21 @@
   <div id="app">
     <HeroImage/>
     <MainContent/>
+    <CitySelect/>
   </div>
 </template>
 
 <script>
 import HeroImage from './components/HeroImage.vue'
 import MainContent from './components/MainContent.vue'
+import CitySelect from './components/CitySelect.vue'
 
 export default {
   name: 'app',
   components: {
     HeroImage,
-    MainContent
+    MainContent,
+    CitySelect
   }
 }
 </script>

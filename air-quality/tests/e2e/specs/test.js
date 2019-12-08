@@ -16,4 +16,8 @@ describe('App starts and elements are present', () => {
   it("5 <p> tags are present within a div with an id of mainContent", () => {
     cy.get('div[id="mainContent"]').children('p').should('have.length', 5)
   });
+
+  it("A div with an id of CityDropdown exists", () => {
+    cy.get('div[id="CityDropdown')
+  });
 })
