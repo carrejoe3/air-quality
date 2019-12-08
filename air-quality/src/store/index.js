@@ -59,6 +59,13 @@ export default new Vuex.Store({
       }
       return secondTextContentData
     },
+    selectCityContent (state) {
+      let selectCityContent = {
+        p1: state.allData['compare-tabs_1_method'],
+        p2: state.allData['compare-tabs_1_title']
+      }
+      return selectCityContent
+    },
     cityData (state) {
       let cityData = []
       for (let i = 1; i < parseInt(state.allData.total_cities_1_value) + 1; i++) {
