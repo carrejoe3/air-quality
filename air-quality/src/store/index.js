@@ -31,6 +31,16 @@ export default new Vuex.Store({
       }
       return firstTextContentData
     },
+    secondTextContentData (state) {
+      let secondTextContentData = {
+        p1: state.allData.p_6_value,
+        p2: state.allData.p_7_value,
+        p3: state.allData.p_8_value,
+        p4: state.allData.p_9_value,
+        p5: state.allData.p_10_value
+      }
+      return secondTextContentData
+    },
     cityData (state) {
       let cityData = []
       for (let i = 1; i < parseInt(state.allData.total_cities_1_value) + 1; i++) {
