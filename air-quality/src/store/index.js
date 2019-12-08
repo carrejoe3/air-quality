@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import englishData from '../data/english.json'
-// import hindiData from '../data/hindi.json'
+import hindiData from '../data/hindi.json'
 
 Vue.use(Vuex)
 
@@ -10,8 +10,17 @@ export default new Vuex.Store({
     allData: englishData
   },
   mutations: {
+    englishDataSource (state) {
+      state.allData = englishData
+    },
+    hindiDataSource (state) {
+      state.allData = hindiData
+    }
   },
   actions: {
+    changeLanguage ({ commit }, language) {
+      language === 'english' ? commit('englishDataSource') : commit('hindiDataSource')
+    }
   },
   getters: {
     heroImageData (state) {
