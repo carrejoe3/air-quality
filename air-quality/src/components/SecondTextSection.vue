@@ -1,6 +1,6 @@
 <template>
   <div id="secondTextSection">
-      <p v-for="content in secondTextContentData" v-bind:key="content.id">{{content}}</p>
+    <p v-for="content in secondTextContentData" v-bind:key="content.id">{{content}}</p>
   </div>
 </template>
 
@@ -14,11 +14,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-#secondTextSection {
-  text-align: left;
-  max-width: 760px;
-  margin: 0 auto;
-}
-</style>

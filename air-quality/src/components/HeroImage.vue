@@ -17,8 +17,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#heroImage {
-  width: 100%;
-  max-width: 760px;
+#heroImageContainer {
+  position: relative;
+  display: inline-block;
+  #heroImageTitle {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    width: 60%;
+    color: white;
+  }
+  #heroImage {
+    width: 100%;
+    max-width: 760px;
+  }
 }
 </style>

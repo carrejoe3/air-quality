@@ -23,8 +23,6 @@ export default {
   display: flex;
   justify-content: space-between;
   text-align: left;
-  max-width: 760px;
-  margin: 0 auto;
   font-size: 0.7em;
 }
 </style>
