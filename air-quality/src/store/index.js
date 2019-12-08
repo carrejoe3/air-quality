@@ -13,6 +13,13 @@ export default new Vuex.Store({
   },
   actions: {
   },
-  modules: {
+  getters: {
+    heroImageData (state) {
+      let heroImageData = {
+        src: state.allData.hero_1_image,
+        title: state.allData.hero_1_title
+      }
+      return heroImageData
+    }
   }
 })
