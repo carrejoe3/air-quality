@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div class="btnContainer">
+      <button v-on:click="toggleLangauge('english')">English</button>
+      <button v-on:click="toggleLangauge('hindi')">Hindi</button>
+    </div>
     <HeroImage/>
     <ArticleInfo/>
     <FirstTextSection/>
@@ -23,6 +27,11 @@ export default {
     FirstTextSection,
     CitySelect,
     SecondTextSection
+  },
+  methods: {
+    toggleLangauge (language) {
+      this.$store.dispatch('changeLanguage', language)
+    }
   }
 }
 </script>
