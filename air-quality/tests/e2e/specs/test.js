@@ -13,6 +13,10 @@ describe('App starts and elements are present', () => {
     cy.get('div[id="heroImageContainer"]').find("h1")
   });
 
+  it("A div with an id of articleInfo exists", () => {
+    cy.get('div[id="articleInfo')
+  });
+
   it("5 <p> tags are present within a div with an id of firstTextSection", () => {
     cy.get('div[id="firstTextSection"]').children('p').should('have.length', 5)
   });
