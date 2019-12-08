@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <HeroImage/>
+    <MainContent/>
   </div>
 </template>
 
 <script>
 import HeroImage from './components/HeroImage.vue'
+import MainContent from './components/MainContent.vue'
 
 export default {
   name: 'app',
   components: {
-    HeroImage
+    HeroImage,
+    MainContent
   }
 }
 </script>
