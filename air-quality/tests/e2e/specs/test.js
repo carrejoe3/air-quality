@@ -20,4 +20,12 @@ describe('App starts and elements are present', () => {
   it("A div with an id of CityDropdown exists", () => {
     cy.get('div[id="CityDropdown')
   });
+
+  it("A select element exists within a div with an id of CityDropdown", () => {
+    cy.get('div[id="CityDropdown').find("select")
+  });
+
+  it("2 <p> tags exists within a div with an id of CityDropdown", () => {
+    cy.get('div[id="CityDropdown').children('p').should('have.length', 2)
+  });
 })

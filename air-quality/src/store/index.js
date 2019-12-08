@@ -35,10 +35,10 @@ export default new Vuex.Store({
       let cityData = []
       for (let i = 1; i < parseInt(state.allData.total_cities_1_value) + 1; i++) {
         let city = {
-          cityId: i,
-          cityName: state.allData['compare-tabs_1_city_' + i + '_name'],
-          cityAqi: state.allData['compare-tabs_1_city_' + i + '_aqi'],
-          cityCigg: state.allData['compare-tabs_1_city_' + i + '_cigg']
+          id: i,
+          name: state.allData['compare-tabs_1_city_' + i + '_name'],
+          aqi: state.allData['compare-tabs_1_city_' + i + '_aqi'],
+          cigg: state.allData['compare-tabs_1_city_' + i + '_cigg']
         }
         cityData.push(city)
       }
