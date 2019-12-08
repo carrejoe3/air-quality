@@ -21,6 +21,15 @@ export default new Vuex.Store({
       }
       return heroImageData
     },
+    articleInfo (state) {
+      let articleInfo = {
+        byLine: state.allData['article-info_1_byline'],
+        date: state.allData['article-info_1_date'],
+        category: state.allData['article-info_1_category'],
+        categoryUrl: state.allData['article-info_1_category_url']
+      }
+      return articleInfo
+    },
     firstTextContentData (state) {
       let firstTextContentData = {
         p1: state.allData.p_1_value,
