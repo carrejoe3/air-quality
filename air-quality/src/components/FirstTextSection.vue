@@ -14,3 +14,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#firstTextSection {
+  :first-child, :last-child {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+}
+</style>

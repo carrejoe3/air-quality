@@ -1,6 +1,6 @@
 <template>
   <div id="secondTextSection">
-    <p v-for="content in secondTextContentData" v-bind:key="content.id">{{content}}</p>
+    <p v-for="content in secondTextContentData" v-bind:key="content.id">{{ content }}</p>
   </div>
 </template>
 
@@ -14,3 +14,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#secondTextSection {
+  :first-child {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+}
+</style>
